@@ -39,7 +39,8 @@ public class Game {
         }
 
         //Refactor?: This could be moved to the turn class. To remove dependency to GameView.
-        // Arguable whether this move is useful.
+        // Gameview should be accesed using an observer pattern, lowers dependecy
+
         gameView.printWinner(currentPlayer);
 
     }
